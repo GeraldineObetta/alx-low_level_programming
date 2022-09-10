@@ -1,8 +1,7 @@
 #include <stdio.h>
 /**
- *
  * main - Prints a hexadecimal string
- * 
+ *
  * Return: Always zero
  */
 int main(void)
