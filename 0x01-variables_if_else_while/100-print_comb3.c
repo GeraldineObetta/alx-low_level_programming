@@ -1,6 +1,5 @@
 #include <stdio.h>
 /**
- *
  * main - print single digit numbers starting from 0
  *
  * Return: returns zero at the end
