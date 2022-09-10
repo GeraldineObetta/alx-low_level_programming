@@ -1,51 +1,21 @@
 #include <stdio.h>
-
-
-
 /**
+ * main - lowercase and uppercase
  *
- *  * main - lowercase and uppercase
- *
- *   *
- *
- *    * Return: Always (Success)
- *
- *     */
-
+ * Return: Always zero
+ */
 int main(void)
-
 {
+	char c;
 
-		char c;
-
-
-
-			for (c = 'a'; c <= 'z'; c++)
-
-					{
-
-								putchar(c);
-
-									}
-
-
-
-				for (c = 'A'; c <= 'Z'; c++)
-
-						{
-
-									putchar(c);
-
-										}
-
-
-
-					putchar('\n');
-
-
-
-						return (0);
-
+	for (c = 'a'; c <= 'z'; c++)
+	{
+		putchar(c);
+	}
+		for (c = 'A'; c <= 'Z'; c++)
+		{
+			putchar(c);
+		}
+		putchar('\n');
+		return (0);
 }
-
-
