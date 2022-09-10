@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - print possible combo of 3
- * 
+ *
  * Return: returns zero at the end
  *
  */
@@ -27,10 +27,10 @@ int main(void)
 						putchar(',');
 						putchar(' ');
 					}
-				}	
+				}
 			}
-		}							
-	}	
+		}
+	}
 	putchar('\n');
 	return (0);
 }
