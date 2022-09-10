@@ -1,47 +1,20 @@
 #include <stdio.h>
-
-
-
 /**
+ * main - Ommit some alphabet
  *
- *   * main - Ommit some alphabet
- *
- *     *
- *
- *       * Return: Always (Success)
- *
- *         */
-
+ * Return: Always (Success)
+ */
 int main(void)
-
 {
+	char c;
 
-		char c;
-
-
-
-			for (c = 'a'; c <= 'z'; c++)
-
-					{
-
-								if (c != 'e' && c != 'q')
-
-											{
-
-															putchar(c);
-
-																	}
-
-									}
-
-
-
-				putchar('\n');
-
-
-
-					return (0);
-
+	for (c = 'a'; c <= 'z'; c++)
+	{
+		if (c != 'e' && c != 'q')
+		{
+			putchar(c);
+		}
+	}
+	putchar('\n');
+	return (0);
 }
-
-
