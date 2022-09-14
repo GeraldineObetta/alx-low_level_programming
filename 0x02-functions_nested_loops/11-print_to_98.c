@@ -1,7 +1,10 @@
 #include "main.h"
 #include <stdio.h>
 
-print_to_98 - Entry point
+/**
+ * print_to_98 - Entry point
+ * @n: number to begin counting at.
+ */
 void print_to_98(int n)
 {
 	int i;
