@@ -1,8 +1,4 @@
-0x03. C - Debugging
-
-By: Carrie Ybay
-
-Project will start Sep 13, 2022 6:00 AM, must end by Sep 16, 2022 6:00 AM
-
-checker was released at Sep 14, 2022 12:00 AM
-
+0. Multiple mains
+1. Like, comment, subscribe
+2. his program prints the largest of three integers.
+3. Leap year
