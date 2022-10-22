@@ -1,41 +1,28 @@
-#include "lists.h"
-#include <stdio.h>
+; My comments: It is so fun to write in assembly language
+; File: 101-hello_holberton.asm
+; Auth: Firdaus H. Salim
+; Desc: 64-bit assembly program that prints
+;       Hello, Holberton followed by a new line.
 
-/**
- * print_listint_safe - print a linked list only one time
- * @head: head of LL
- * Return: counter of nodes & prints an error if the linked list is a circle
- */
-size_t print_listint_safe(const listint_t *head)
-{
-	const listint_t *slow, *fast, *marker;
-	unsigned int counter = 0, flag = 0;
 
-	if (head == NULL)
-		return (0);
-	marker = slow = head;
-	fast = head->next;
-	while (head != NULL)
-	{
-		printf("[%p] %d\n", (void *)head, head->n);
-		head = head->next;
-		counter++;
+extern printf
 
-		if (flag == 0 && fast != NULL && fast->next != NULL && slow != NULL)
-		{
-			if (fast == slow)
-			{
-				flag = 1;
-				slow = marker;
-			}
-			fast = fast->next->next;
-		}
-		if (flag == 1 && slow == head)
-		{
-			printf("-> [%p] %d\n", (void *)head, head->n);
-			break;
-		}
-		slow = slow->next;
-	}
-	return (counter);
-}
+section .text
+   global main
+
+main:
+   push rbp
+
+   mov rdi,fmt
+   mov rsi,msg
+   mov rax,0
+   call printf
+
+   pop rbp
+
+   mov rax,0
+   ret
+
+section .data
+   msg: db "Hello, Holberton", 0
+   fmt: db "%s", 10, 0
