@@ -1,25 +1,3 @@
-
-Aysuarex
-/
-alx-low_level_programming
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Security
-Insights
-alx-low_level_programming/0x15-file_io/100-elf_header.c
-@Aysuarex
-Aysuarex Update 100-elf_header.c
- 1 contributor
-319 lines (290 sloc)  6.75 KB
-/*
- * File: 100-elf_header.c
- * Auth: Suara Ayomide
- */
-
 #include <elf.h>
 #include <sys/types.h>
 #include <sys/stat.h>
@@ -39,17 +17,19 @@ void print_type(unsigned int e_type, unsigned char *e_ident);
 void print_entry(unsigned long int e_entry, unsigned char *e_ident);
 void close_elf(int elf);
 
+
 /**
  * check_elf - Checks if a file is an ELF file.
  * @e_ident: A pointer to an array containing the ELF magic numbers.
  *
  * Description: If the file is not an ELF file - exit code 98.
  */
+
 void check_elf(unsigned char *e_ident)
 {
 	int index;
 
-	for (index = 0; index < 4; index++)
+		for (index = 0; index < 4; index++)
 	{
 		if (e_ident[index] != 127 &&
 		    e_ident[index] != 'E' &&
@@ -65,7 +45,6 @@ void check_elf(unsigned char *e_ident)
 /**
  * print_magic - Prints the magic numbers of an ELF header.
  * @e_ident: A pointer to an array containing the ELF magic numbers.
- *
  * Description: Magic numbers are separated by spaces.
  */
 void print_magic(unsigned char *e_ident)
